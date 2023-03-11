@@ -1,0 +1,14 @@
+#! /bin/bash
+
+set -e
+
+BOOT_FS=$(df -P -h -T "/boot" | awk 'END{print $2}')
+
+if [[ $BOOT_FS == vfat ]]
+then
+echo 'vfat does not support symlinks...'
+echo 'doing nothing'
+exit 0
+else
+/usr/bin/linux-base-update-symlinks "$@"
+fi
