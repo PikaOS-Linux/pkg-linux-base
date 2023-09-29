@@ -1,6 +1,6 @@
-linux-base (4.5ubuntu9-pika90) lunar; urgency=medium
+linux-base (4.5ubuntu9-pika90) pikauwu; urgency=medium
 
-  Rebuild for lunar
+  Rebuild for pikauwu
 
  -- Tim Gardner <tim.gardner@canonical.com>  Tue, 22 Jun 2021 07:38:37 -0600
 
